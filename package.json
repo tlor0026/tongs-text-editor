@@ -1,0 +1,24 @@
+{
+  "name": "tongs-text-editor",
+  "version": "1.0.0",
+  "description": "Text-editor challenge",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlor0026/tongs-text-editor.git"
+  },
+  "author": "Tong Lor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tlor0026/tongs-text-editor/issues"
+  },
+  "homepage": "https://github.com/tlor0026/tongs-text-editor#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.11"
+  }
+}
