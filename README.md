@@ -12,7 +12,7 @@
   This is an example of how to NO-SQL works using MONGO DB!
   
   Please download Demo video within the repro!
-    ![alt text](./Challenge 18.mp4)
+ 
   
   THIS READ ME WAS GENERATED USING MY OWN README GENERATOR!
   ## Installation:
