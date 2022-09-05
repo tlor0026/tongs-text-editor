@@ -71,16 +71,15 @@ const userController = {
 
   // Friends list /api/users/:userId/friends/:friendId
   friendslistAdd({params}, res) {
-    User.findOneAndUpdate({
-      id_: params.id
-    },
-      {$push: { friends: params.friendsId}},
-      {new: true},
-    )
-    .then(dbUserData => res.json(dbUserData))
-    .catch(err => res.status(400).json(err));
-  }
-
+    User.findOneAndUpdate({ _id: params.id }, { $addToSet: { friends: params.friendsId } }, { new: true })
+    .then(user => { res.json(user) })
+    .catch(err => res.json(err));
+},
+    deleteFriend({ params }, res) {
+      User.findOneAndUpdate({ _id: params.id }, { $pull: { friends: params.friendsId } }, { new: true })
+      .then(user => {res.json(user)})
+      .catch(err => res.json(err));
+}
 
 };
 
